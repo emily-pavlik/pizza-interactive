@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Italian vs. Italian-American Food</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="page">
+    <header class="intro">
+      <p class="eyebrow">A FOOD COMPARISON</p>
+      <h1>One Dish, Two Traditions</h1>
+      <p class="description">
+        Drag the slider to compare Italian-style pizza with Chicago-style pizza to explore how Italian culinary traditions were adapted and reimagined in Chicago.
+      </p>
+    </header>
+
+    <section class="comparison">
+      <div class="comparison-labels">
+        <span>NEAPOLITAN PIZZA</span>
+        <span>CHICAGO-STYLE PIZZA</span>
+      </div>
+
+      <div class="comparison-container" id="comparison">
+       <!-- Bottom image: Italian-American pizza -->
+<img
+  class="comparison-image"
+  src="images/thick-pizza.png"
+  alt="American pizza"
+>
+
+<!-- Top image: Italian pizza -->
+<div class="image-overlay" id="image-overlay">
+  <img
+    class="comparison-image"
+    src="images/italian-pizza.png"
+    alt="Italian pizza"
+  >
+</div>
+
+        <!-- Draggable divider -->
+        <div class="slider-divider" id="slider-divider">
+          <span class="slider-handle" aria-hidden="true">↔</span>
+        </div>
+
+        <!-- Accessible slider control -->
+        <input
+          type="range"
+          id="comparison-slider"
+          class="comparison-slider"
+          min="0"
+          max="100"
+          value="50"
+          aria-label="Compare Italian and Italian-American carbonara"
+        >
+      </div>
+
+      <p class="instruction">← Drag to compare →</p>
+    </section>
+
+    <footer>
+      <p>One dish. Two culinary traditions.</p>
+    </footer>
+  </main>
+</body>
+</html>
