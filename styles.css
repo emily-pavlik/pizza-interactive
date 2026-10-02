@@ -210,3 +210,42 @@ footer {
   }
 }
 
+.sources {
+  max-width: 900px;
+  margin: 70px auto 40px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+  text-align: left;
+}
+
+.sources h3 {
+  margin: 0 0 20px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.sources p {
+  margin: 12px 0 8px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.sources ul {
+  margin: 0 0 20px;
+  padding-left: 20px;
+}
+
+.sources li {
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-tagline {
+  text-align: center;
+  margin-top: 30px;
+}
+
