@@ -249,3 +249,157 @@ footer {
   margin-top: 30px;
 }
 
+/* =========================
+   PIZZA HOTSPOTS
+   ========================= */
+
+.pizza-hotspots {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Individual hotspot */
+
+.hotspot {
+  position: absolute;
+
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+  border: 2px solid white;
+
+  background: rgba(255, 255, 255, 0.9);
+  color: #222;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  pointer-events: auto;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  transition: transform 0.2s ease;
+}
+
+.hotspot:hover,
+.hotspot:focus {
+  transform: scale(1.15);
+}
+
+
+/* -------------------------
+   Neapolitan positions
+   ------------------------- */
+
+.italian-hotspots .hotspot:nth-child(1) {
+  left: 25%;
+  top: 65%;
+}
+
+.italian-hotspots .hotspot:nth-child(2) {
+  left: 43%;
+  top: 35%;
+}
+
+.italian-hotspots .hotspot:nth-child(3) {
+  left: 60%;
+  top: 55%;
+}
+
+
+/* -------------------------
+   Chicago positions
+   ------------------------- */
+
+.chicago-hotspots .hotspot:nth-child(1) {
+  right: 25%;
+  top: 65%;
+}
+
+.chicago-hotspots .hotspot:nth-child(2) {
+  right: 43%;
+  top: 40%;
+}
+
+.chicago-hotspots .hotspot:nth-child(3) {
+  right: 20%;
+  top: 25%;
+}
+
+
+/* -------------------------
+   Information box
+   ------------------------- */
+
+.hotspot-info {
+  display: none;
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 25px;
+
+  transform: translateX(-50%);
+
+  width: min(360px, calc(100% - 40px));
+
+  padding: 22px 25px;
+
+  background: rgba(255, 255, 255, 0.97);
+
+  border: 1px solid var(--line);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+  z-index: 10;
+}
+
+.hotspot-info.active {
+  display: block;
+}
+
+.hotspot-info h3 {
+  margin: 0 0 8px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 22px;
+
+  font-weight: 500;
+}
+
+.hotspot-info p {
+  margin: 0;
+
+  color: var(--muted);
+
+  line-height: 1.6;
+
+  font-size: 15px;
+}
+
+
+/* Close button */
+
+.close-info {
+  position: absolute;
+
+  top: 8px;
+  right: 10px;
+
+  border: none;
+
+  background: none;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  color: var(--muted);
+}
