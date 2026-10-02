@@ -162,6 +162,8 @@ footer {
 }
 
 .comparison-description {
+  font-family: "Avenir Next", Avenir, sans-serif;
+  color: #6a665c;
   max-width: 900px;
   margin: 45px auto 0;
   padding-top: 35px;
